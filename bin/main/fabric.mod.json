@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "wokemusic",
+	"version": "${version}",
+	"name": "Woke SMP Music Pack",
+	"description": "Custom music discs for Woke SMP",
+	"authors": [
+		"Nevflorals",
+		"AnnieWuu"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/wokemusic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nevflorals.wokemusic.WokeMusic"
+		],
+		"fabric-datagen": [
+			"nevflorals.wokemusic.WokeMusicDataGenerator"
+		],
+		"client": [
+			"nevflorals.wokemusic.WokeMusicClient"
+		]
+	},
+	"mixins": [
+		"wokemusic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
